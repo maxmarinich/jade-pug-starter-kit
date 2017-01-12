@@ -1,0 +1,123 @@
+=ps()
+  display: block
+  content: ""
+  position: absolute
+=h()
+  display: block
+  content: ""
+  position: absolute
+  left: 0
+  right: 0
+  margin: 0 auto
+=v()
+  display: block
+  content: ""
+  position: absolute
+  top: 0
+  bottom: 0
+  margin: auto 0
+=hv()
+  display: block
+  content: ""
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+=hvb()
+  display: block
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+=tr($all_)
+  transition: all $all_ ease-out
+=trc($color_)
+  transition: color $color_ ease-out
+=tro($opacity_)
+  transition: opacity $opacity_ ease-out
+=trt($transform_)
+  transition: transform $transform_ ease-out
+=trb($bc)
+  transition: border-color $bc ease-out
+=trbg($bgc)
+  transition: background-color $bgc ease-out
+=vam()
+  display: inline-block
+  vertical-align: middle
+=vat()
+  display: inline-block
+  vertical-align: top
+=vab()
+  display: inline-block
+  vertical-align: bottom
+=dt()
+  display: table
+  table-layout: fixed
+  width: 100%
+=dtct()
+  display: table-cell
+  vertical-align: top
+=dtcm()
+  display: table-cell
+  vertical-align: middle
+=dtcb()
+  display: table-cell
+  vertical-align: bottom
+=cf()
+  &:after
+    display: block
+    content: ''
+    height: 0
+    visibility: hidden
+    clear: both
+=vam-ps()
+  font-size: 0
+  &:after
+    content: ""
+    display: inline-block
+    width: 0
+    height: 100%
+    vertical-align: middle
+=o($bgc: #fff, $opacity: 0.7)
+  background: rgba($bgc, $opacity)
+=pso($bgc: #fff, $opacity: 0.7)
+  &:after
+    display: block
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba($bgc, $opacity)
+=select-reset()
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  &::-ms-expand
+    display: none
+
+
+@mixin arrow($direction, $width, $height, $color)
+  width: $width
+  height: $height
+  @if $direction == 'top'
+    border-bottom: $height solid $color
+    border-left: ($width / 2) solid transparent
+    border-right: ($width / 2) solid transparent
+  @if $direction == 'bottom'
+    border-top: $height solid $color
+    border-left: ($width / 2) solid transparent
+    border-right: ($width / 2) solid transparent
+  @if $direction == 'left'
+    border-right: $width solid $color
+    border-top: ($height / 2) solid transparent
+    border-bottom: ($height / 2) solid transparent
+  @if $direction == 'right'
+    border-left: $width solid $color
+    border-top: ($height / 2) solid transparent
+    border-bottom: ($height / 2) solid transparent

@@ -1,0 +1,7 @@
+mixin m-site(i)
+    nav.m-site(role='navigation' aria-label='main menu')
+        ul.m-site__ul
+            li.m-site__item
+                a.m-site__link(href='#' class=i == 1 ? '_active' : '') item 1
+            li.m-site__item
+                a.m-site__link(href='#' class=i == 2 ? '_active' : '') item 2

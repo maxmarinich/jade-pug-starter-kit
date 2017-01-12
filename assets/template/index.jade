@@ -1,0 +1,12 @@
+include partitial/mixins
+
+doctype html
+html
+    include partitial/head
+    body.p-index
+        include partitial/svg
+        .wrapper
+            +s-header()
+            .wrapper__content
+            +s-footer()
+        +scripts()

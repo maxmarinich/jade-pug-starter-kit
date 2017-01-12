@@ -1,0 +1,6 @@
+mixin l-breadcrumbs(arr)
+    ul.l-breadcrumbs(role="navigation" aria-label="breadcrumb")
+        - for (var i = 0; i < arr.length - 1; i++)
+            li.l-breadcrumbs__li
+                a.l-breadcrumbs__link(href='#') #{arr[i]}
+        li.l-breadcrumbs__li #{arr[arr.length - 1]}

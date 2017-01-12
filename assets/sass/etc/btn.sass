@@ -1,0 +1,47 @@
+.btn-default
+  +vam()
+  min-width: 72px
+  font-size: 15px
+  color: $btn_menu_clr
+  padding: 4px 10px
+  border: 1px solid $btn_menu_clr
+  margin-right: 10px
+  text-align: center
+  font-family: Arial, Helvetica, sans-serif
+
+
+.btn-menu
+  width: 71px
+  height: 71px
+  border: 1px solid $btn_menu_clr
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  &__dash
+    display: block
+    width: 30px
+    height: 2px
+    background: $btn_menu_clr
+    &+&
+      margin-top: 9px
+
+.btn-close
+  width: 72px
+  height: 72px
+  border-radius: 50%
+  position: absolute
+  top: -37px
+  right: -32px
+  background: $btn_menu_clr
+  &:before,
+  &:after
+    +hv()
+    width: 30px
+    height: 2px
+    background: #fff
+  &:before
+    transform: rotate(-45deg)
+  &:after
+    transform: rotate(45deg)

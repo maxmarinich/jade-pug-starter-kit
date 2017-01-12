@@ -1,0 +1,21 @@
+mixin scripts(page)
+    if page == 'contact'
+        script.
+            var map,
+                mapObj = document.getElementById('map');
+            function initMap() {
+                if (mapObj) {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 32.0619503, lng: 34.7706303},
+                        zoom: 15
+                    });
+                    var marker = new google.maps.Marker({
+                        position: {lat: 32.0619503, lng: 34.7706303},
+                        map: map,
+                        title: 'Nahalat Binyamin St 75'
+                    });
+                }
+            }
+        script(type='text/javascript', src='http://maps.google.com/maps/api/js?sensor=false&callback=initMap')
+
+    script(src='../assets/js/main.js')

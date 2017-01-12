@@ -1,0 +1,100 @@
+html,body,h1,h2,h3,h4,h5,h6,p,em,strong,abbr,acronym,blockquote,q,cite,ins,del,dfn,a,div,span,pre,hr,address,br,b,i,sub,big,small,tt,table,tr,caption,thead,tbody,tfoot,col,colgroup,form,input,label,textarea,button,fieldset,legend,select,option,ul,ol,li,dl,dt,dd,code,var,samp,img,object,param,map,area {padding:0; margin:0; border:none;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub,  tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, header, footer, section, aside, figure, figcaption, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+ol,ul{list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+input[type=button],input[type=submit], button {cursor:pointer;}
+button {border: 0;}
+
+:focus {outline: none; }
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{border: none;outline: none;}
+input::-ms-clear {
+    width : 0;
+    height: 0;
+}
+
+// 1. Disable resize.
+// 2. Allow user select.
+input,
+textarea {
+  resize: none; // 1
+  user-select: text // 2
+}
+::-ms-clear {width : 0; height: 0; display: none;}
+::-ms-reveal {width: 0; height: 0; display: none;}
+a {text-decoration: none;}
+
+// Correct `block` display not defined in IE 8/9.
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block
+}
+// 1. Correct `inline-block` display not defined in IE 8/9.
+// 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; // 1
+  vertical-align: baseline // 2
+}
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+// Address `[hidden]` styling not present in IE 8/9.
+// Hide the `template` element in IE, Safari, and Firefox < 22.
+[hidden],
+template {
+  display: none
+}
+// 1. Remove `border-radius` in iOS.
+// 2. Remove `box-shadow` in iOS.
+input,
+select,
+textarea {
+  border-radius: 0; // 1
+  box-shadow: none // 2
+}
+:disabled,
+[disabled],
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box
+}
