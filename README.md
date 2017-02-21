@@ -1,4 +1,4 @@
-# Simple Project Kit
+# Jade-Pug Starter Kit
 
 ## Start of project
 
