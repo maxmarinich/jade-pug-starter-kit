@@ -8,6 +8,7 @@
     "frontend",
     "gulp",
     "jade",
+    "pug",
     "sass"
   ],
   "author": {
